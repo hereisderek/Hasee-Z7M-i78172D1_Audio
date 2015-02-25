@@ -114,7 +114,56 @@
 				<integer>0</integer>
 			</dict>
 			<key>NodesToPatch</key>
-			<array/>
+			<array>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x90a6015f</string>
+					<key>Node</key>
+					<integer>18</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x9017011f</string>
+					<key>Node</key>
+					<integer>20</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x01011010</string>
+					<key>Node</key>
+					<integer>27</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x01011020</string>
+					<key>Node</key>
+					<integer>23</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x01a11060</string>
+					<key>Node</key>
+					<integer>24</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x01451140</string>
+					<key>Node</key>
+					<integer>30</integer>
+				</dict>
+			</array>
 			<key>Noise</key>
 			<integer>0</integer>
 			<key>Vectorize</key>

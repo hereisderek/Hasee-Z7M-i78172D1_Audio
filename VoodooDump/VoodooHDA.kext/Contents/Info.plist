@@ -127,17 +127,9 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x90170120</string>
+					<string>0x90170110</string>
 					<key>Node</key>
 					<integer>20</integer>
-				</dict>
-				<dict>
-					<key>Codec</key>
-					<integer>0</integer>
-					<key>Config</key>
-					<string>0x01011030</string>
-					<key>Node</key>
-					<integer>27</integer>
 				</dict>
 				<dict>
 					<key>Codec</key>
@@ -146,6 +138,14 @@
 					<string>0x01011020</string>
 					<key>Node</key>
 					<integer>23</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x01011030</string>
+					<key>Node</key>
+					<integer>27</integer>
 				</dict>
 				<dict>
 					<key>Codec</key>

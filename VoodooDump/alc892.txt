@@ -38,7 +38,7 @@ nid 27 0x01011030 as  3 seq  0 Line-out      Jack  1/8     Rear    External Blac
 nid 24 0x01a11060 as  6 seq  0 Microphone    Jack  1/8     Rear    External Black   misc 0
 nid 30 0x01441140 as  4 seq  0 SPDIF-out     Jack  RCA     Rear    External Black   misc 0 NoPresenceDetect
 
- group line-out and speaker 
+ group line-out and speaker ---> not working
 nid 18 0x90a60150 as  5 seq  0 Microphone    Fixed Digital N/A     Internal Unknown misc 0 NoPresenceDetect
 nid 20 0x90170120 as  1 seq  0 Speaker       Fixed Analog  N/A     Internal Unknown misc 0 NoPresenceDetect
 nid 23 0x01011020 as  2 seq  0 Line-out      Jack  1/8     Rear    External Black   misc 0
@@ -46,3 +46,10 @@ nid 27 0x01011030 as  3 seq  0 Line-out      Jack  1/8     Rear    External Blac
 nid 24 0x01a11060 as  6 seq  0 Microphone    Jack  1/8     Rear    External Black   misc 0
 nid 30 0x01441140 as  4 seq  0 SPDIF-out     Jack  RCA     Rear    External Black   misc 0 NoPresenceDetect
 
+ back to no disabled:
+nid 18 0x90a60150 as  5 seq  0 Microphone    Fixed Digital N/A     Internal Unknown misc 0 NoPresenceDetect
+nid 20 0x90170110 as  1 seq  0 Speaker       Fixed Analog  N/A     Internal Unknown misc 0 NoPresenceDetect
+nid 23 0x01011020 as  2 seq  0 Line-out      Jack  1/8     Rear    External Black   misc 0
+nid 27 0x01011030 as  3 seq  0 Line-out      Jack  1/8     Rear    External Black   misc 0
+nid 24 0x01a11060 as  6 seq  0 Microphone    Jack  1/8     Rear    External Black   misc 0
+nid 30 0x01441140 as  4 seq  0 SPDIF-out     Jack  RCA     Rear    External Black   misc 0 NoPresenceDetect

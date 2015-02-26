@@ -58,7 +58,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x18560010</string>
+					<string>0x400000f0</string>
 					<key>Node</key>
 					<integer>5</integer>
 				</dict>
@@ -66,7 +66,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x18560020</string>
+					<string>0x400000f0</string>
 					<key>Node</key>
 					<integer>6</integer>
 				</dict>
@@ -74,7 +74,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x18560030</string>
+					<string>0x400000f0</string>
 					<key>Node</key>
 					<integer>7</integer>
 				</dict>
@@ -127,7 +127,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x90170170</string>
+					<string>0x90170110</string>
 					<key>Node</key>
 					<integer>20</integer>
 				</dict>
@@ -159,17 +159,9 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x01441040</string>
+					<string>0x01441140</string>
 					<key>Node</key>
 					<integer>30</integer>
-				</dict>
-				<dict>
-					<key>Codec</key>
-					<integer>0</integer>
-					<key>Config</key>
-					<string>0x40341080</string>
-					<key>Node</key>
-					<integer>29</integer>
 				</dict>
 			</array>
 			<key>Noise</key>

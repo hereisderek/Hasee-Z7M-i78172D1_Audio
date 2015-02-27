@@ -106,3 +106,7 @@ Unknown UNKNOWN  Speaker at Int N/A          20 0x14   0x90170110   01471c10 014
         0x1b[Pin Complex] -> 0x26[Audio Mixer] -> 0x25[Audio Output]: 27 38 37
 1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e21 01771f01     line-out -> headphone
         0x17[Pin Complex] -> 0x0f[Audio Mixer] -> 0x05[Audio Output]: 23 15 5
+
+Vref caps: HIZ 50(0x32) GRD 80 100 (from codec) showed up in: 0x18(24) 0x19(25) 0x1a(26) 0x1b(27)
+Mic: MuteGPIO = 32 + 0100 + 12 = 0x32010012 = 838926354
+ExtMic: MuteGPIO = 32 + 0100 + 18 = 0x32010018 = 838926360

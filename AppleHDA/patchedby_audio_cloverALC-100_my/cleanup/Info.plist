@@ -48,11 +48,18 @@
 			<array>
 				<dict>
 					<key>CodecID</key>
-					<integer>269697544</integer>
+					<integer>283904146</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHQEBRx4XAUcfkAF3HCABdx0QAXce
+					IQF3HwEBtxwwAbcdEAG3HgEBtx8BAeccQAHn
+					HREB5x5EAecfAQEnHFABJx0BAScepgEnH5AB
+					hxxgAYcdEAGHHqEBhx8BAUcMAg==
+					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>0</integer>
+					<integer>86</integer>
 				</dict>
 				<dict>
 					<key>CodecID</key>

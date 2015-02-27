@@ -47,6 +47,10 @@
 			<key>HDAConfigDefault</key>
 			<array>
 				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
 					<key>CodecID</key>
 					<integer>283904146</integer>
 					<key>ConfigData</key>
@@ -55,12 +59,12 @@
 					FwFHH5ABdxwgAXcdEAF3HiEBdx8BAYccYAGH
 					HRABhx6hAYcfAQG3HDABtx0QAbceAQG3HwEB
 					1xxwAdcdEQHXHjQB1x9AAeccQAHnHREB5x5E
-					AecfAQFHDAI=
+					AecfAQ==
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>86</integer>
+					<integer>3</integer>
 				</dict>
 			</array>
 			<key>IOClass</key>

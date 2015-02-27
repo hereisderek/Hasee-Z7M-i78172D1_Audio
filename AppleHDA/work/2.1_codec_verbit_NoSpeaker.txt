@@ -76,7 +76,8 @@ Disabled:
 01571cf0 01571d00 01571e00 01571f40
 01571cf0 01571d00 01571e00 01571f40
 
-
+27 38 37
+1b 26 25
 [MIC]
 Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d01 01271ea6 01271f90
         0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x12[Pin Complex]: 9 34 18

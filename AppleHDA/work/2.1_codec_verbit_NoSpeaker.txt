@@ -43,14 +43,8 @@ Unknown UNKNOWN  Speaker at Int N/A          20 0x14   0x90170110   01471c10 014
     RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c70 01d71d11 01d71e34 01d71f40
     RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d11 01e71e44 01e71f01
 --------------------------------------------------------------------------------------------------------
-01271c50 01271d01 01271ea6 01271f90
-01471c10 01471d01 01471e17 01471f90 01470C02
-01771c20 01771d10 01771e21 01771f01
-01871c60 01871d10 01871ea1 01871f01
-01b71c30 01b71d10 01b71e01 01b71f01 01470C02
-01d71c70 01d71d11 01d71e34 01d71f40
-01e71c40 01e71d11 01e71e44 01e71f01
 
+01271c50 01271d01 01271ea6 01271f90 01471c10 01471d01 01471e17 01471f90 01771c20 01771d10 01771e21 01771f01 01871c60 01871d10 01871ea1 01871f01 01b71c30 01b71d10 01b71e01 01b71f01 01d71c70 01d71d11 01d71e34 01d71f40 01e71c40 01e71d11 01e71e44 01e71f01 01470C02
 
 Disabled:
    Jack   Color  Description                  Node     PinDefault             Modified Verbs
@@ -107,6 +101,8 @@ Unknown UNKNOWN  Speaker at Int N/A          20 0x14   0x90170110   01471c10 014
 1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e21 01771f01     line-out -> headphone
         0x17[Pin Complex] -> 0x0f[Audio Mixer] -> 0x05[Audio Output]: 23 15 5
 
-Vref caps: HIZ 50(0x32) GRD 80 100 (from codec) showed up in: 0x18(24) 0x19(25) 0x1a(26) 0x1b(27)
+Vref caps: HIZ 50(0x32) GRD 80 100 (from codec) showed up in: 0x18(24 VREF_50) 0x19(25 VREF_HIZ) 0x1a(26 VREF_HIZ) 0x1b(27 VREF_HIZ)
 Mic: MuteGPIO = 32 + 0100 + 12 = 0x32010012 = 838926354
-ExtMic: MuteGPIO = 32 + 0100 + 18 = 0x32010018 = 838926360
+ExtMic/LineIn: MuteGPIO = 32 + 0100 + 18 = 0x32010018 = 838926360
+Int Speaker = 0x32010014 = 838926356
+

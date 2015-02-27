@@ -81,3 +81,28 @@ Disabled:
 01571cf0 01571d00 01571e00 01571f40
 01571cf0 01571d00 01571e00 01571f40
 01571cf0 01571d00 01571e00 01571f40
+
+
+[MIC]
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d01 01271ea6 01271f90
+        0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x12[Pin Complex]: 9 34 18
+    1/8   Black  Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01
+        0x08[Audio Input] -> 0x23[Audio Mixer] -> 0x18[Pin Complex]: 8 35 24
+
+[SPDIF In]
+    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c70 01d71d11 01d71e34 01d71f40
+        0x1d[Pin Complex]
+
+[SPDIF Out]
+RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d11 01e71e44 01e71f01
+      0x1e[Pin Complex]   -> 0x06[Audio Output]: 30 6
+
+[IntSpeaker]
+Unknown UNKNOWN  Speaker at Int N/A          20 0x14   0x90170110   01471c10 01471d01 01471e17 01471f90
+        0x14 -> 0x0c -> 0x02[Audio Output]: 20 12 2
+
+[Line Out]       
+1/8   Black  Line Out at Ext Rear        27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01     EAPD
+        0x1b[Pin Complex] -> 0x26[Audio Mixer] -> 0x25[Audio Output]: 27 38 37
+1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e21 01771f01     line-out -> headphone
+        0x17[Pin Complex] -> 0x0f[Audio Mixer] -> 0x05[Audio Output]: 23 15 5

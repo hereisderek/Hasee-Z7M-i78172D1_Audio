@@ -40,7 +40,7 @@ fix
 --------------------------------------------------------------------------------------------------------
 
 Unknown Unknown  Speaker at Ext N/A          17 0x11   0x4010c000   01171c00 01171dc0 01171e10 01171f40
-    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c80 01d71d10 01d71e34 01d71f40
+    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c80 01d71d10 01d71e34 01d71f40 (Beep)
 
 Digital Unknown  Mic at Int N/A              18 0x12   0x99a60100   01271c50 01271d00 01271ea6 01271f90
 Unknown Black    LineIn at Ext Rear          24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01
@@ -78,10 +78,10 @@ LineOut:
     0x14 (50) 838926356
 
 [MIC]
-        0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x12[Pin Complex]: 9 34 18
+        0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x12[Pin Complex]: 9 34 18 Int 
         
         0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x18[Pin Complex]: 9 34 24
-        0x08[Audio Input] -> 0x23[Audio Mixer] -> 0x18[Pin Complex]: 8 35 24
+        //0x08[Audio Input] -> 0x23[Audio Mixer] -> 0x18[Pin Complex]: 8 35 24 Ext 
 
 [SPDIF In]
 
@@ -94,3 +94,77 @@ LineOut:
 [Line Out]
         0x1b[Pin Complex] -> 0x0e[Audio Mixer] -> 0x04[Audio Output]: 27 14 4
         0x17[Pin Complex] -> 0x0f[Audio Mixer] -> 0x05[Audio Output]: 23 15 5
+
+getdump
+Playback:
+
+    nid=27 [pin: Headphones (Black Rear)]
+      |
+      + <- nid=12 [audio mixer] bindSeq=00000001
+             |
+             + <- nid=2 [audio output] [src: pcm] bindSeq=00000001
+
+             + <- nid=11 [audio mixer] bindSeq=00000001
+                    |
+                    + <- nid=24 [pin: Line-in (Black Rear)] [src: line] bindSeq=00000001
+
+                    + <- nid=29 [beep widget]
+
+Record:
+
+    nid=9 [audio input]
+      |
+      + <- nid=34 [audio mixer] [src: mix] bindSeq=00000001
+
+             |
+             + <- nid=24 [pin: Line-in (Black Rear)] [src: line] bindSeq=00000001
+
+             + <- nid=29 [beep widget]
+             + <- nid=18 [pin: Microphone (ATAPI)] [src: monitor] bindSeq=00000001
+
+
+Input Mix:
+
+    nid=34 [audio mixer]
+      |
+      + <- nid=24 [pin: Line-in (Black Rear)] [src: line] bindSeq=00000001
+
+      + <- nid=29 [beep widget]
+      + <- nid=18 [pin: Microphone (ATAPI)] [src: monitor] bindSeq=00000001
+
+
+    nid=35 [audio mixer]
+      |
+      + <- nid=24 [pin: Line-in (Black Rear)] [src: line] bindSeq=00000001
+
+      + <- nid=29 [beep widget]
+
+内置扬声器：20，12，2
+耳机：21，12，2
+内置麦克风：9，34，18
+外置麦克风：8，35，24
+线路输入：8，35，26
+SPDIFOut:30，6
+
+内置扬声器：20，12，2
+内置麦克风：9，34，18
+外置麦克风：8，35，24
+耳机：27，12，2
+线路输出：23 15 5
+SPDIFOut:30，6
+
+[IntSpeaker]
+        0x14 -> 0x0c -> 0x02[Audio Output]: 20 12 2
+        0x1b[Pin Complex] -> 0x0e[Audio Mixer] -> 0x04[Audio Output]: 27 14 4
+[MIC]
+        0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x12[Pin Complex]: 9 34 18
+        0x08[Audio Input] -> 0x23[Audio Mixer] -> 0x18[Pin Complex]: 8 35 24
+[Line Out]
+        
+        0x17[Pin Complex] -> 0x0f[Audio Mixer] -> 0x05[Audio Output]: 23 15 5
+[SPDIF Out]
+      0x1e[Pin Complex]   -> 0x06[Audio Output]: 30 6
+
+Voodoo dump:
+playback:
+27 12 2

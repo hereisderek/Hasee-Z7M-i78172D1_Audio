@@ -1,0 +1,107 @@
+
+Verbs from Linux Codec Dump File: /Users/derek/Workspace/hackintosh/hasee/audio/AppleHDA/work/1_codec_removeExtraSpeaker_NoAFG.txt
+
+Codec: Realtek ALC892   Address: 0   DevID: 283904146 (0x10ec0892)
+
+   Jack   Color  Description                  Node     PinDefault             Original Verbs
+--------------------------------------------------------------------------------------------------------
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d01 01271ea6 01271f90
+                 Speaker at Int N/A          20 0x14   0x90170110   01471c10 01471d01 01471e17 01471f90
+    1/8   Black  Speaker at Ext Rear         21 0x15   0x411111f0   01571cf0 01571d11 01571e11 01571f41
+    1/8   Black  Speaker at Ext Rear         22 0x16   0x411111f0   01671cf0 01671d11 01671e11 01671f41
+    1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e01 01771f01
+                 Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01
+    1/8   Black  Speaker at Ext Rear         25 0x19   0x411111f0   01971cf0 01971d11 01971e11 01971f41
+    1/8   Black  Speaker at Ext Rear         26 0x1a   0x411111f0   01a71cf0 01a71d11 01a71e11 01a71f41
+                 Line Out at Ext Rear        27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01
+    1/8   Black  Speaker at Ext Rear         28 0x1c   0x411111f0   01c71cf0 01c71d11 01c71e11 01c71f41
+    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c29 01d71d14 01d71e34 01d71f40
+    RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d11 01e71e44 01e71f01
+    1/8   Black  Speaker at Ext Rear         31 0x1f   0x411111f0   01f71cf0 01f71d11 01f71e11 01f71f41
+--------------------------------------------------------------------------------------------------------
+
+
+   Jack   Color  Description                  Node     PinDefault             Modified Verbs
+--------------------------------------------------------------------------------------------------------
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d00 01271ea6 01271f90
+                 Speaker at Int N/A          20 0x14   0x90170110   01471c10 01471d00 01471e17 01471f90
+    1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e01 01771f01
+                 Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01
+    1/8   Black  Line Out at Ext Rear        27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01
+    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c70 01d71d10 01d71e34 01d71f40
+    RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d10 01e71e44 01e71f01
+--------------------------------------------------------------------------------------------------------
+
+My modification:
+   Jack   Color  Description                  Node     PinDefault             Modified Verbs
+--------------------------------------------------------------------------------------------------------
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d01 01271ea6 01271f90
+Unknown UNKNOWN  Speaker at Int N/A          20 0x14   0x90170110   01471c10 01471d01 01471e17 01471f90     EAPD
+    1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e21 01771f01     line-out -> headphone
+    1/8   Black  Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01
+    1/8   Black  Line Out at Ext Rear        27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01     EAPD
+    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c70 01d71d11 01d71e34 01d71f40
+    RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d11 01e71e44 01e71f01
+--------------------------------------------------------------------------------------------------------
+
+01271c50 01271d01 01271ea6 01271f90 01471c10 01471d01 01471e17 01471f90 01771c20 01771d10 01771e21 01771f01 01871c60 01871d10 01871ea1 01871f01 01b71c30 01b71d10 01b71e01 01b71f01 01d71c70 01d71d11 01d71e34 01d71f40 01e71c40 01e71d11 01e71e44 01e71f01 01470C02
+
+Disabled:
+   Jack   Color  Description                  Node     PinDefault             Modified Verbs
+--------------------------------------------------------------------------------------------------------
+    1/8   Black  Speaker at Ext Rear         21 0x15   0x411111f0   01571cf0 01571d11 01571e11 01571f41
+    1/8   Black  Speaker at Ext Rear         22 0x16   0x411111f0   01671cf0 01671d11 01671e11 01671f41
+    1/8   Black  Speaker at Ext Rear         25 0x19   0x411111f0   01971cf0 01971d11 01971e11 01971f41
+    1/8   Black  Speaker at Ext Rear         26 0x1a   0x411111f0   01a71cf0 01a71d11 01a71e11 01a71f41
+    1/8   Black  Speaker at Ext Rear         28 0x1c   0x411111f0   01c71cf0 01c71d11 01c71e11 01c71f41
+    1/8   Black  Speaker at Ext Rear         31 0x1f   0x411111f0   01f71cf0 01f71d11 01f71e11 01f71f41
+--------------------------------------------------------------------------------------------------------
+    1/8   Black  Speaker at Ext Rear         21 0x15   0x411111f0   01571cf0 01571d00 01571e00 01571f40
+    1/8   Black  Speaker at Ext Rear         22 0x16   0x411111f0   01571cf0 01571d00 01571e00 01571f40
+    1/8   Black  Speaker at Ext Rear         25 0x19   0x411111f0   01571cf0 01571d00 01571e00 01571f40
+    1/8   Black  Speaker at Ext Rear         26 0x1a   0x411111f0   01571cf0 01571d00 01571e00 01571f40
+    1/8   Black  Speaker at Ext Rear         28 0x1c   0x411111f0   01571cf0 01571d00 01571e00 01571f40
+    1/8   Black  Speaker at Ext Rear         31 0x1f   0x411111f0   01571cf0 01571d00 01571e00 01571f40
+--------------------------------------------------------------------------------------------------------
+01571cf0 01571d11 01571e11 01571f41
+01671cf0 01671d11 01671e11 01671f41
+01971cf0 01971d11 01971e11 01971f41
+01a71cf0 01a71d11 01a71e11 01a71f41
+01c71cf0 01c71d11 01c71e11 01c71f41
+01f71cf0 01f71d11 01f71e11 01f71f41
+01571cf0 01571d00 01571e00 01571f40
+01571cf0 01571d00 01571e00 01571f40
+01571cf0 01571d00 01571e00 01571f40
+01571cf0 01571d00 01571e00 01571f40
+01571cf0 01571d00 01571e00 01571f40
+01571cf0 01571d00 01571e00 01571f40
+
+[MIC]
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d01 01271ea6 01271f90
+        0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x12[Pin Complex]: 9 34 18
+    1/8   Black  Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01
+        0x08[Audio Input] -> 0x23[Audio Mixer] -> 0x18[Pin Complex]: 8 35 24
+
+[SPDIF In]
+    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c70 01d71d11 01d71e34 01d71f40
+        0x1d[Pin Complex]
+
+[SPDIF Out]
+RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d11 01e71e44 01e71f01
+      0x1e[Pin Complex]   -> 0x06[Audio Output]: 30 6
+
+[IntSpeaker]
+Unknown UNKNOWN  Speaker at Int N/A          20 0x14   0x90170110   01471c10 01471d01 01471e17 01471f90
+        0x14 -> 0x0c -> 0x02[Audio Output]: 20 12 2
+
+[Line Out]       
+1/8   Black  Line Out at Ext Rear        27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01     EAPD
+        0x1b[Pin Complex] -> 0x26[Audio Mixer] -> 0x25[Audio Output]: 27 38 37
+1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e21 01771f01     line-out -> headphone
+        0x17[Pin Complex] -> 0x0f[Audio Mixer] -> 0x05[Audio Output]: 23 15 5
+
+Vref caps: HIZ 50(0x32) GRD 80 100 (from codec) showed up in: 0x18(24 VREF_50) 0x19(25 VREF_HIZ) 0x1a(26 VREF_HIZ) 0x1b(27 VREF_HIZ)
+Mic: MuteGPIO = 32 + 0100 + 12 = 0x32010012 = 838926354
+ExtMic/LineIn: MuteGPIO = 32 + 0100 + 18 = 0x32010018 = 838926360
+Int Speaker = 0x32010014 = 838926356
+

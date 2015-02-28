@@ -79,6 +79,8 @@ LineOut:
 
 [MIC]
         0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x12[Pin Complex]: 9 34 18
+        
+        0x09[Audio Input] -> 0x22[Audio Mixer] -> 0x18[Pin Complex]: 9 34 24
         0x08[Audio Input] -> 0x23[Audio Mixer] -> 0x18[Pin Complex]: 8 35 24
 
 [SPDIF In]

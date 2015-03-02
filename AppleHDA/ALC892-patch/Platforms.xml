@@ -3564,8 +3564,28 @@
 									<key>PublishVolume</key>
 									<true/>
 									<key>VolumeInputAmp</key>
-									<false/>
+									<true/>
 								</dict>
+								<key>NodeID</key>
+								<integer>9</integer>
+							</dict>
+							<dict>
+								<key>NodeID</key>
+								<integer>34</integer>
+							</dict>
+							<dict>
+								<key>Boost</key>
+								<integer>3</integer>
+								<key>NodeID</key>
+								<integer>18</integer>
+							</dict>
+						</array>
+					</array>
+				</array>
+				<array>
+					<array>
+						<array>
+							<dict>
 								<key>NodeID</key>
 								<integer>27</integer>
 							</dict>

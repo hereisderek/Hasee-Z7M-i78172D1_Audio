@@ -64,7 +64,7 @@
 			<array>
 				<dict>
 					<key>LayoutID</key>
-					<integer>8</integer>
+					<integer>3</integer>
 					<key>SampleOffsetPad</key>
 					<integer>260</integer>
 				</dict>
@@ -87,6 +87,32 @@
 			<string>com.apple.driver.AppleHDA</string>
 			<key>HDAConfigDefault</key>
 			<array>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Realtek ALC892</string>
+					<key>CodecID</key>
+					<integer>283904146</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6gAScfkAFHHFABRx0BAUce
+					FwFHH5ABRwwCAXccMAF3HRABdx4BAXcfAQGH
+					HEABhx0QAYcegQGHHwEBtxwgAbcdEAG3HgEB
+					tx8BAbcMAgHnHGAB5x0QAeceRAHnHwEBFxzw
+					ARcdAAEXHgABFx9AAVcc8AFXHQABVx4AAVcf
+					QAFnHPABZx0AAWceAAFnH0ABlxzwAZcdAAGX
+					HgABlx9AAacc8AGnHQABpx4AAacfQAG3HPAB
+					tx0AAbceAAG3H0ABxxzwAccdAAHHHgABxx9A
+					Adcd8AHXHQAB1x4AAdcfQA==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>3</integer>
+				</dict>
 				<dict>
 					<key>CodecID</key>
 					<integer>283902569</integer>

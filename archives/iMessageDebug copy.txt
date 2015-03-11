@@ -1,0 +1,29 @@
+**********************iMessage Debug**********************
+Credits: ElNono, mdmwii,flux84, sugarface, pokenguyen
+
+
+              Model: MacBookAir6,2
+           Board-id: Mac-7DF21CB3ED6977E5
+       SerialNumber: C02MNA9UG085
+      Hardware UUID: 5BBFC312-B731-5D18-AB90-647084932CE1
+
+          System-ID: 31BE169B-E180-A95A-9698-F63FD48DADE2
+                ROM: 280b5c3f8862
+  BoardSerialNumber: C02418404GSFY5CA5
+
+         Gq3489ugfi: 10071af22bc90b728ac615e946340a9927
+          Fyp98tpgj: 1eaa1c78de8e7205be8aae543badbfe2c5
+         kbjfrfpoJU: 3ee0d7790142abae65552f94004973328e
+       oycqAZloTNDm: bb3f03199079d28704f6ba0c1e39e785fc
+       abKPld1EcMni: 753e75461ceeb46f94b9a51cda4b392d3e
+
+
+Model: iMac14,3
+Board-id: Mac-77EB7D7DAF985301
+OS X Yosemite
+SerialNumber: C02ML14JF8J3
+Hardware UUID: BF3867A2-990B-5846-9E25-F8AB512EDA92
+System-ID: 41C2BC9E-EEBB-F85C-A3CC-6EC21C405C63 ROM: 0c4de974191e
+BoardSerialNumber: C024126002HF9T5A6
+Gq3489ugfi: 4fa0de2cd0aca718ae5e4bb46e1b148f8f Fyp98tpgj: c025799ea5244d17d98af6f2aedf7ce6d2 kbjfrfpoJU: 2f5987924d0f43688061088a1b9c19d34a
+oycqAZloTNDm: 727db32a2f1fe4d89d5425d98690982fe5 abKPld1EcMni: 87f019fc8039e1c906cb6c13f560e1fb72

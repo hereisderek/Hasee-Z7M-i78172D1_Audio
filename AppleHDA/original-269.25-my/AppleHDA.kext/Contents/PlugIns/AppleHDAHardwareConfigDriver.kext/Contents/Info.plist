@@ -48,25 +48,6 @@
 			<array>
 				<dict>
 					<key>CodecID</key>
-					<integer>300681362</integer>
-					<key>ConfigData</key>
-					<data>
-					AUccEAFHHQEBRx4XAUcfkAF3HCABdx0QAXce
-					IQF3HwEBtxwwAbcdEAG3HgEBtx8BAeccQAHn
-					HREB5x5EAecfAQEnHFABJx0BAScepgEnH5AB
-					hxxgAYcdEAGHHqEBhx8BAdcccAHXHREB1x40
-					AdcfQAFXHPABVx0AAVceAAFXH0ABZxzwAWcd
-					EQFnHhEBZx9BAZcc8AGXHREBlx4RAZcfQQGn
-					HPABpx0RAaceEQGnH0EBxxzwAccdEQHHHhEB
-					xx9BAfcc8AH3HREB9x4RAfcfQQ==
-					</data>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>LayoutID</key>
-					<integer>892</integer>
-				</dict>
-				<dict>
-					<key>CodecID</key>
 					<integer>269697544</integer>
 					<key>FuncGroup</key>
 					<integer>1</integer>

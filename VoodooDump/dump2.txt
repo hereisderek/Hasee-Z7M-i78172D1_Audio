@@ -1,3 +1,297 @@
+Found a device of class VoodooHDADevice: IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/B0D3@3/VoodooHDADevice
+
+
+Probing codec #0...
+ HDA Codec #0: Intel (Unknown)
+ HDA Codec ID: 0x80862807
+       Vendor: 0x8086
+       Device: 0x2807
+     Revision: 0x00
+     Stepping: 0x00
+PCI Subvendor: 0x65571558
+	startNode=1 endNode=2
+	Found audio FG nid=1 startNode=2 endNode=9 total=7
+
+Processing audio FG cad=0 nid=1...
+Powering up...
+Parsing audio FG...
+GPIO: 0x00000000 NumGPIO=0 NumGPO=0 NumGPI=0 GPIWake=0 GPIUnsol=0
+ nid  5 0x18560010 as  1 seq  0 Digital-out   Jack  Digital Special Internal Unknown misc 0
+ nid  6 0x18560020 as  2 seq  0 Digital-out   Jack  Digital Special Internal Unknown misc 0
+ nid  7 0x18560030 as  3 seq  0 Digital-out   Jack  Digital Special Internal Unknown misc 0
+Parsing vendor patch...
+Nodes patching. Codec = 0 
+NumNodes = 0
+VHDevice NID= 2 Config=00000000 (audio output  ) Cap=00000000 Ctrl=00000000 -- Conns:
+VHDevice NID= 3 Config=00000000 (audio output  ) Cap=00000000 Ctrl=00000000 -- Conns:
+VHDevice NID= 4 Config=00000000 (audio output  ) Cap=00000000 Ctrl=00000000 -- Conns:
+VHDevice NID= 5 Config=18560010 (pin: Digital-o) Cap=09000094 Ctrl=00000000 -- Conns: 0=2
+VHDevice NID= 6 Config=18560020 (pin: Digital-o) Cap=09000094 Ctrl=00000000 -- Conns: 0=3
+VHDevice NID= 7 Config=18560030 (pin: Digital-o) Cap=09000094 Ctrl=00000000 -- Conns: 0=4
+VHDevice NID= 8 Config=00000000 (vendor widget ) Cap=00000000 Ctrl=00000000 -- Conns:
+Disabling nonaudio...
+Disabling useless...
+Patched pins configuration:
+ nid  5 0x18560010 as  1 seq  0 Digital-out   Jack  Digital Special Internal Unknown misc 0
+ nid  6 0x18560020 as  2 seq  0 Digital-out   Jack  Digital Special Internal Unknown misc 0
+ nid  7 0x18560030 as  3 seq  0 Digital-out   Jack  Digital Special Internal Unknown misc 0
+Parsing pin associations...
+3 associations found:
+Association 0 (1) out:
+ Pin nid=5 seq=0
+   Redir type=-1 jack=0 def=0
+Association 1 (2) out:
+ Pin nid=6 seq=0
+   Redir type=-1 jack=0 def=0
+Association 2 (3) out:
+ Pin nid=7 seq=0
+   Redir type=-1 jack=0 def=0
+Building AFG tree...
+Tracing association 0 (1)
+ Tracing pin 5 with min nid 0
+   nid 2 returned 2
+  nid 5 returned 2
+ Pin 5 traced to DAC 2
+Association 0 (1) trace succeeded
+Tracing association 1 (2)
+ Tracing pin 6 with min nid 0
+   nid 3 returned 3
+  nid 6 returned 3
+ Pin 6 traced to DAC 3
+Association 1 (2) trace succeeded
+Tracing association 2 (3)
+ Tracing pin 7 with min nid 0
+   nid 4 returned 4
+  nid 7 returned 4
+ Pin 7 traced to DAC 4
+Association 2 (3) trace succeeded
+Tracing input monitor
+Tracing other input monitors
+Tracing beeper
+Disabling unassociated widgets...
+Disabling nonselected inputs...
+Disabling useless...
+Disabling crossassociated connections...
+Disabling useless...
+Binding associations to channels...
+Assigning names to signal sources...
+Parsing Ctls...
+Assigning mixers to the tree...
+Preparing pin controls...
+AFG commit...
+Creating PCM devices...
+pcmAttach: HDA Intel (Unknown) PCM #0 DisplayPort at cad 0 nid 1
++--------------------------------------+
+| DUMPING PCM Playback/Record Channels |
++--------------------------------------+
+
+Playback:
+
+     Stream cap: 0x00000005
+                 AC3 PCM
+        PCM cap: 0x001e07f0
+                 16 20 24 32 bits, 32 44 48 88 96 176 192 KHz
+            DAC: 2
+
++-------------------------------+
+| DUMPING Playback/Record Paths |
++-------------------------------+
+
+Playback:
+
+    nid=5 [pin: Digital-out (HDMI)]
+      |
+      + <- nid=2 [audio output] [src: pcm] bindSeq=00000001
+
+
++-------------------------+
+| DUMPING Volume Controls |
++-------------------------+
+
+Master Volume (OSS: vol)
+   |
+   +- control  1 (nid   5 out):    dir - out oss: vol, pcm mute
+
+PCM Volume (OSS: pcm)
+   |
+   +- control  1 (nid   5 out):    dir - out oss: vol, pcm mute
+
+OSS mixer initialization...
+Registering PCM channels...
+pcmAttach: HDA Intel (Unknown) PCM #1 DisplayPort at cad 0 nid 1
++--------------------------------------+
+| DUMPING PCM Playback/Record Channels |
++--------------------------------------+
+
+Playback:
+
+     Stream cap: 0x00000005
+                 AC3 PCM
+        PCM cap: 0x001e07f0
+                 16 20 24 32 bits, 32 44 48 88 96 176 192 KHz
+            DAC: 3
+
++-------------------------------+
+| DUMPING Playback/Record Paths |
++-------------------------------+
+
+Playback:
+
+    nid=6 [pin: Digital-out (HDMI)]
+      |
+      + <- nid=3 [audio output] [src: pcm] bindSeq=00000001
+
+
++-------------------------+
+| DUMPING Volume Controls |
++-------------------------+
+
+Master Volume (OSS: vol)
+   |
+   +- control  2 (nid   6 out):    dir - out oss: vol, pcm mute
+
+PCM Volume (OSS: pcm)
+   |
+   +- control  2 (nid   6 out):    dir - out oss: vol, pcm mute
+
+OSS mixer initialization...
+Registering PCM channels...
+pcmAttach: HDA Intel (Unknown) PCM #2 DisplayPort at cad 0 nid 1
++--------------------------------------+
+| DUMPING PCM Playback/Record Channels |
++--------------------------------------+
+
+Playback:
+
+     Stream cap: 0x00000005
+                 AC3 PCM
+        PCM cap: 0x001e07f0
+                 16 20 24 32 bits, 32 44 48 88 96 176 192 KHz
+            DAC: 4
+
++-------------------------------+
+| DUMPING Playback/Record Paths |
++-------------------------------+
+
+Playback:
+
+    nid=7 [pin: Digital-out (HDMI)]
+      |
+      + <- nid=4 [audio output] [src: pcm] bindSeq=00000001
+
+
++-------------------------+
+| DUMPING Volume Controls |
++-------------------------+
+
+Master Volume (OSS: vol)
+   |
+   +- control  3 (nid   7 out):    dir - out oss: vol, pcm mute
+
+PCM Volume (OSS: pcm)
+   |
+   +- control  3 (nid   7 out):    dir - out oss: vol, pcm mute
+
+OSS mixer initialization...
+Registering PCM channels...
+FG config/quirks: forcestereo ivref50 ivref80 ivref100 ivref
+HP switch init...
+
++-------------------+
+| DUMPING HDA NODES |
++-------------------+
+
+Default Parameter
+-----------------
+         IN amp: 0x00000000
+        OUT amp: 0x00000000
+
+            nid: 2
+           Name: audio output
+     Widget cap: 0x00006611
+                 PWR DIGITAL 8CH
+    Association: 0 (0x00000001)
+            OSS: pcm (pcm)
+     Stream cap: 0x00000005
+                 AC3 PCM
+        PCM cap: 0x001e07f0
+                 16 20 24 32 bits, 32 44 48 88 96 176 192 KHz
+
+            nid: 3
+           Name: audio output
+     Widget cap: 0x00006611
+                 PWR DIGITAL 8CH
+    Association: 1 (0x00000001)
+            OSS: pcm (pcm)
+     Stream cap: 0x00000005
+                 AC3 PCM
+        PCM cap: 0x001e07f0
+                 16 20 24 32 bits, 32 44 48 88 96 176 192 KHz
+
+            nid: 4
+           Name: audio output
+     Widget cap: 0x00006611
+                 PWR DIGITAL 8CH
+    Association: 2 (0x00000001)
+            OSS: pcm (pcm)
+     Stream cap: 0x00000005
+                 AC3 PCM
+        PCM cap: 0x001e07f0
+                 16 20 24 32 bits, 32 44 48 88 96 176 192 KHz
+
+            nid: 5
+           Name: pin: Digital-out (HDMI)
+     Widget cap: 0x0040778d
+                 PWR DIGITAL UNSOL 8CH
+    Association: 0 (0x00000001)
+        Pin cap: 0x09000094
+                 PDC OUT HDMI DP HBR
+     Pin config: 0x18560010
+    Pin control: 0x00000040 OUT
+     Output amp: 0x80000000
+                 mute=1 step=0 size=0 offset=0
+     Output val: [0x00 0x00]
+    connections: 1 enabled 1
+          |
+          + <- nid=2 [audio output]
+
+            nid: 6
+           Name: pin: Digital-out (HDMI)
+     Widget cap: 0x0040778d
+                 PWR DIGITAL UNSOL 8CH
+    Association: 1 (0x00000001)
+        Pin cap: 0x09000094
+                 PDC OUT HDMI DP HBR
+     Pin config: 0x18560020
+    Pin control: 0x00000040 OUT
+     Output amp: 0x80000000
+                 mute=1 step=0 size=0 offset=0
+     Output val: [0x00 0x00]
+    connections: 1 enabled 1
+          |
+          + <- nid=3 [audio output]
+
+            nid: 7
+           Name: pin: Digital-out (HDMI)
+     Widget cap: 0x0040778d
+                 PWR DIGITAL UNSOL 8CH
+    Association: 2 (0x00000001)
+        Pin cap: 0x09000094
+                 PDC OUT HDMI DP HBR
+     Pin config: 0x18560030
+    Pin control: 0x00000040 OUT
+     Output amp: 0x80000000
+                 mute=1 step=0 size=0 offset=0
+     Output val: [0x00 0x00]
+    connections: 1 enabled 1
+          |
+          + <- nid=4 [audio output]
+
+            nid: 8 [DISABLED]
+           Name: vendor widget
+     Widget cap: 0x00f00000
+
+
 Found a device of class VoodooHDADevice: IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/HDEF@1B/VoodooHDADevice
 
 

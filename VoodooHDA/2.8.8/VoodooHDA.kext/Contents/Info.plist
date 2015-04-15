@@ -92,15 +92,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x90170110</string>
-					<key>Node</key>
-					<integer>20</integer>
-				</dict>
-				<dict>
-					<key>Codec</key>
-					<integer>0</integer>
-					<key>Config</key>
-					<string>0x0021001f</string>
+					<string>0x01010010</string>
 					<key>Node</key>
 					<integer>27</integer>
 				</dict>
@@ -108,7 +100,15 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x90a10020</string>
+					<string>0x90170130</string>
+					<key>Node</key>
+					<integer>20</integer>
+				</dict>
+				<dict>
+					<key>Codec</key>
+					<integer>0</integer>
+					<key>Config</key>
+					<string>0x90a60150</string>
 					<key>Node</key>
 					<integer>18</integer>
 				</dict>
@@ -116,7 +116,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x01a11030</string>
+					<string>0x01A11060</string>
 					<key>Node</key>
 					<integer>24</integer>
 				</dict>
@@ -124,7 +124,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x00010040</string>
+					<string>0x01010020</string>
 					<key>Node</key>
 					<integer>23</integer>
 				</dict>
@@ -132,7 +132,7 @@
 					<key>Codec</key>
 					<integer>0</integer>
 					<key>Config</key>
-					<string>0x01441150</string>
+					<string>0x01451140</string>
 					<key>Node</key>
 					<integer>30</integer>
 				</dict>

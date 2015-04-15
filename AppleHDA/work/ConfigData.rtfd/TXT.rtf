@@ -1,10 +1,10 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf530
 {\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fmodern\fcharset0 Courier;\f2\fswiss\fcharset0 Helvetica;
-}
+\f3\fnil\fcharset0 Monaco;}
 {\colortbl;\red255\green255\blue255;\red133\green0\blue175;\red0\green68\blue254;\red243\green235\blue0;
 \red221\green32\blue103;\red255\green255\blue51;\red77\green77\blue77;\red168\green24\blue75;\red46\green111\blue253;
 \red102\green0\blue141;\red0\green0\blue194;\red217\green11\blue0;\red255\green39\blue18;\red36\green62\blue62;
-\red59\green0\blue164;}
+\red59\green0\blue164;\red52\green52\blue52;\red255\green255\blue255;}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \paperw11900\paperh16840\margl1440\margr1440\vieww20940\viewh19060\viewkind0
@@ -403,7 +403,7 @@ Patched pins configuration:\
 \
 \
 0x90170110\
-0x0021001f\
+0x00210060\
 \
 0x90a10020\
 0x01a11030\
@@ -793,4 +793,110 @@ MuteGPIO
 \b0 \cf0 \kerning1\expnd0\expndtw0 Node 0x18 24: 0x32(50) + 0100 + 18 = 0x32010018 = 838926360\
 Node 0x18 24: 0x32(50) + 0100 + 18 = 0x32010018 = 838926360\
 \
+\
+\
+Voodoo: \
+\pard\pardeftab720\sl300
+
+\f3\fs18 \cf16 \cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec16 01014410 = 21471c10 21471d44 21471e01 21471f01\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 |------- Port Connectivity\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 -|------ Location\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 --|----- Default Device\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ---|---- Connection Type\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ----|--- Color\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 -----|-- Misc\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ------|- Default Association\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cb17 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 -------| Sequence
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720
+\cf0 \
+Verbs from Linux Codec Dump File: /Users/derek/Workspace/hackintosh/hasee/audio/AppleHDA/work/1.1_codec_NoAFG.txt\
+\
+Codec: Realtek ALC892   Address: 0   DevID: 283904146 (0x10ec0892)\
+\
+\pard\pardeftab720
+
+\f1 \cf0    Jack   Color  Description                  Node     PinDefault             Original Verbs\
+--------------------------------------------------------------------------------------------------------\
+Unknown Unknown  Speaker at Ext N/A 	17 0x11   0x4010c000		01171c00 01171dc0 01171e10 01171f40\
+Digital Unknown  Mic at Int N/A		18 0x12   0x90a60150		01271c50 01271d01 01271ea6 01271f90\
+Unknown Unknown  Speaker at Int N/A	20 0x14   0x90170110		01471c10 01471d01 01471e17 01471f90\
+    1/8   Black  Speaker at Ext Rear	21 0x15   0x411111f0		01571cf0 01571d11 01571e11 01571f41\
+    1/8   Black  Speaker at Ext Rear	22 0x16   0x411111f0		01671cf0 01671d11 01671e11 01671f41\
+    1/8   Black  Line Out at Ext Rear	23 0x17   0x01011020		01771c20 01771d10 01771e01 01771f01\
+Unknown Unknown  Mic at Ext Rear 		24 0x18   0x01A11060		01871c60 01871d10 01871ea1 01871f01\
+    1/8   Black  Speaker at Ext Rear 	25 0x19   0x411111f0		01971cf0 01971d11 01971e11 01971f41\
+    1/8   Black  Speaker at Ext Rear 	26 0x1a   0x411111f0		01a71cf0 01a71d11 01a71e11 01a71f41\
+Unknown Line Out at Ext Rear 			27 0x1b   0x01011030		01b71c30 01b71d10 01b71e01 01b71f01\
+    1/8   Black  Speaker at Ext Rear 	28 0x1c   0x411111f0		01c71cf0 01c71d11 01c71e11 01c71f41\
+    RCA   Black  CD at Ext N/A 		29 0x1d   0x40341429		01d71c29 01d71d14 01d71e34 01d71f40\
+    RCA   Black  SPDIF Out at Ext Rear	30 0x1e   0x01441140		01e71c40 01e71d11 01e71e44 01e71f01\
+    1/8   Black  Speaker at Ext Rear	31 0x1f   0x411111f0		01f71cf0 01f71d11 01f71e11 01f71f41\
+--------------------------------------------------------------------------------------------------------\
+\
+   Jack   Color  Description                  Node     PinDefault             Modified Verbs\
+--------------------------------------------------------------------------------------------------------\
+Unknown Unknown  Speaker at Ext N/A          17 0x11   0x4010c000   01171c00 01171dc0 01171e10 01171f40\
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d00 01271ea6 01271f90\
+Unknown Unknown  Speaker at Int N/A          20 0x14   0x90170110   01471c70 01471d00 01471e17 01471f90\
+    1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e01 01771f01\
+Unknown Unknown  Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01\
+Unknown Line Out at Ext Rear                 27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01\
+    RCA   Black  CD at Ext N/A               29 0x1d   0x40341429   01d71c80 01d71d10 01d71e34 01d71f40\
+    RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d10 01e71e44 01e71f01\
+--------------------------------------------------------------------------------------------------------\
+\pard\pardeftab720
+
+\f0 \cf0 \
+\pard\pardeftab720
+
+\f1 \cf0    Jack   Color  Description                  Node     PinDefault             Modified Verbs\
+--------------------------------------------------------------------------------------------------------\
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d00 01271ea6 01271f90\
+Unknown Unknown  Speaker at Int N/A          20 0x14   0x90170110   01471c70 01471d00 01471e17 01471f90\
+    1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e01 01771f01\
+Unknown Unknown  Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01\
+Unknown Line Out at Ext Rear                 27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01\
+    RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d10 01e71e44 01e71f01\
+--------------------------------------------------------------------------------------------------------
+\f0 \
+\
+
+\f1    Jack   Color  Description                  Node     PinDefault             Modified Verbs\
+--------------------------------------------------------------------------------------------------------\
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d00 01271ea6 01271f90\
+Unknown Unknown  Speaker at Int N/A          20 0x14   0x90170110   01471c70 01471d00 01471e17 01471f90\
+    1/8   Black  Line Out at Ext Rear        23 0x17   0x01011020   01771c20 01771d10 01771e01 01771f01\
+Unknown Unknown  Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01\
+Unknown Line Out at Ext Rear                 27 0x1b   0x01011030   01b71c30 01b71d10 01b71e01 01b71f01\
+    RCA   Black  SPDIF Out at Ext Rear       30 0x1e   0x01441140   01e71c40 01e71d10 01e71e44 01e71f01\
+--------------------------------------------------------------------------------------------------------\
+\
+   Jack   Color  Description                  Node     PinDefault             Modified Verbs\
+--------------------------------------------------------------------------------------------------------\
+Digital Unknown  Mic at Int N/A              18 0x12   0x90a60150   01271c50 01271d00 01271ea6 01271f90\
+Unknown Unknown  Speaker at Int N/A          20 0x14   0x90170110   01471c70 01471d00 01471e17 01471f90\
+    1/8 Unknown  Line Out at Ext Rear        23 0x17   0x01010020   01771c20 01771d00 01771e01 01771f01\
+Unknown Unknown  Mic at Ext Rear             24 0x18   0x01A11060   01871c60 01871d10 01871ea1 01871f01\
+Unknown Unknown  Line Out at Ext Rear        27 0x1b   0x01010030   01b71c30 01b71d00 01b71e01 01b71f01\
+Optical   Black  SPDIF Out at Ext Rear       30 0x1e   0x01451140   01e71c40 01e71d10 01e71e45 01e71f01\
+--------------------------------------------------------------------------------------------------------
+\f0 \
 }
